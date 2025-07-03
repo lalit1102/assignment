@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact us</title>
+    <style>
+       
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body {
+  background-color: #f0f4f8;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+form {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+button[type="submit"] {
+  display: block;
+  margin: 0 auto;
+}
+
+    </style>
+</head>
+<body>
+    <form action="">
+    <fieldset>
+        <legend>contact us</legend>
+    <table>
+        <tr>
+            <td> <label for="fullName">Full Name:</label></td>
+            <td><input type="text" id="fullName" name="fullName" required minlength="2" maxlength="100" placeholder="FULL Name"></td>
+        </tr>
+        <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="email" id="email" name="email"  placeholder="ABC@GMAIL.COM "required ></td>
+        </tr>
+        <tr>
+            <td><label for="phone">Phone Number:</label></td>
+            <td><input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" title="Enter a 10-digit phone number"></td>
+        </tr>
+        <tr>
+            <td><label for="subject">Subject:</label></td>
+            <td>
+                <select id="subject" name="subject" required>
+                    <option value="">--Please choose an option--</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="support">Support</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td> <label for="message">Message:</label></td>
+            <td><textarea id="message" name="message" required minlength="10" maxlength="1000"></textarea></td>
+        </tr>
+        <tr>
+            <td><button type="submit">Submit</button></td>
+        </tr>
+    </table>
+    </fieldset>
+    </form>
+</body>
+</html>
