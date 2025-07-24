@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5 Multimedia and Graphics Demo</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #45414157;
+      }
+      h1 {
+        text-align: center;
+        font-size: 36px;
+        color: darkgray;
+      }
+      section {
+        background-color: white;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 30px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        color: #ab2626;
+        border-bottom: 2px solid #eee;
+        padding-bottom: 10px;
+        text-align: center;
+      }
+      .media-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 20px;
+      }     
+      canvas {
+        border: 1px solid #ccc;
+        background-color: white;
+        display: block;
+        margin: 0 auto;
+      }
+      svg {
+        border: 1px solid #ccc;
+        background-color: white;
+        display: block;
+        margin: 20px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HTML5 LAB ASSIGNMENT</h1>
+
+    
+    <section>
+      <h2>Audio Tag with Properties</h2>
+      <div class="media-box">
+        <audio src="SONG.MP3.mp3" controls muted loop autoplay></audio>
+        <p>Audio element with these properties:</p>
+        <ul>
+          <li><strong>controls</strong>: Shows playback controls</li>
+          <li><strong>muted</strong>: Audio is initially muted</li>
+          <li><strong>loop</strong>: Audio will loop continuously</li>
+          <li>
+            <strong>autoplay</strong>: Audio will play automatically when page
+            loads
+          </li>
+        </ul>
+      </div>
+    </section>
+
+   
+    <section>
+      <h2>Video Tag with Properties</h2>
+      <div class="media-box">
+        <video src="20 SECOND TIMER ⏲️.mp4" controls muted loop autoplay></video>
+        <p>Video element with these properties:</p>
+        <ul>
+          <li><strong>controls</strong>: Shows playback controls</li>
+          <li><strong>muted</strong>: Video is initially muted</li>
+          <li><strong>loop</strong>: Video will loop continuously</li>
+          <li>
+            <strong>autoplay</strong>: Video will play automatically when page
+            loads
+          </li>
+        </ul>
+      </div>
+    </section>
+
+   
+<section>
+        <h2>Canvas Shapes</h2>
+        <canvas id="myCanvas" width="400" height="300"></canvas>
+        <p>Canvas elements created:</p>
+        <ul>
+        <li>A yellow rectangle with red border</li>
+        <li>A blue circle</li>
+        <li>A green triangle</li>
+        <li>Text drawing saying "lalit"</li>
+        </ul>
+    <script>
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+        
+        
+        ctx.strokeStyle = 'red';
+        ctx.lineWidth = 3;
+        ctx.fillStyle = 'yellow';
+        ctx.fillRect(20, 20, 150, 100);
+        ctx.strokeRect(20, 20, 150, 100);
+        
+     
+        ctx.beginPath();
+        ctx.fillStyle = 'blue';
+        ctx.arc(300, 100, 50, 0, Math.PI * 2, true);
+        ctx.fill();
+        ctx.stroke();
+      
+      
+        ctx.beginPath();
+        ctx.fillStyle = 'green';
+        ctx.moveTo(200, 200);
+        ctx.lineTo(250, 250);
+        ctx.lineTo(150, 250);
+        ctx.closePath();
+        ctx.fill();
+        ctx.stroke();
+        
+     
+        ctx.font = '24px Arial';
+        ctx.fillStyle = 'purple';
+        ctx.fillText('lalit ', 100, 270);
+    </script>
+</section>
+
+    
+<section>
+      <h2>SVG Shapes</h2>
+      <svg width="400" height="300">
+        
+        <rect x="20" y="20" width="150" height="100" stroke="red" stroke-width="3" fill="yellow"/>
+
+       
+        <circle cx="300" cy="100" r="50" stroke="black" stroke-width="2" fill="blue"/>
+
+        
+        <polygon points="200,200 250,250 150,250" fill="green" stroke="black" stroke-width="2"/> 
+       
+        <text x="120" y="280" font-family="Arial" font-size="24" fill="purple">
+          lalit
+        </text>
+      </svg>
+      <p>SVG elements created:</p>
+      <ul>
+        <li>A yellow rectangle with red border</li>
+        <li>A blue circle</li>
+        <li>A green triangle</li>       
+        <li>Text element saying "lalit"</li>
+      </ul>
+ </section>   
+  </body>
+</html>
