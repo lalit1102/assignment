@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Arial", sans-serif;
+      }
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-color: #f5f5f5;
+      }
+      header {
+        background-color: #2c3e50;
+        color: white;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      .logo img {
+        margin-left: 10px;
+        border-radius: 50%;
+      }
+      nav ul {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+      }
+      nav a:hover {
+        color: #3498db;
+      }
+      .product-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 20px; 
+        padding: 20px;
+        background-color: #f9f9f9;
+      }
+
+      .product-card {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        text-align: center;
+      }
+
+      .product-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      .product-card img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .product-card h3 {
+        margin: 15px 0 10px;
+        font-size: 1.2em;
+        color: #333;
+      }
+
+      .product-card .price {
+        margin-bottom: 15px;
+        font-size: 1em;
+        color: #e91e63;
+        font-weight: bold;
+      }
+      footer {
+        background-color: #2c3e50;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      footer a {
+        text-decoration: none;
+        color: #007bff;
+      }
+     
+     
+     
+     
+     
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="215966637.jpg" alt="logo" height="50px" width="50px" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="16 pro max black.webp" alt="Product 1" />
+          <h3>i phone 16 pro max</h3>
+          <p class="price">₹1,49,999</p>
+        </div>
+        <div class="product-card">
+          <img src="16pro white.jpg" alt="Product 1" />
+          <h3>i phone 16 pro </h3>
+          <p class="price">₹1,04,9999</p>
+        </div>
+        <div class="product-card">
+          <img src="16plus white.jpg" alt="Product 1" />
+          <h3>i phone 16plus</h3>
+          <p class="price">₹99,999</p>
+        </div>
+        <div class="product-card">
+          <img src="16blue.jpg" alt="Product 1" />
+          <h3> i phone 16</h3>
+          <p class="price">₹89.999</p>
+        </div>
+        <div class="product-card">
+          <img src="16e black.jpg" alt="Product 1" />
+          <h3>i phone 16e</h3>
+          <p class="price">₹59,999</p>
+        </div>
+        <div class="product-card">
+          <img src="apple watch.webp" alt="Product 1" />
+          <h3>apple watch</h3>
+          <p class="price">₹79,999</p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2025 Lalit With Code. All rights reserved.</p>
+      <p>
+        <a href="/privacy-policy">Privacy Policy</a> |
+        <a href="/terms-of-service">Terms of Service</a>
+      </p>
+      <p>
+        Follow us on:
+        <a href="https://facebook.com" target="_blank">Facebook</a>,
+        <a href="https://twitter.com" target="_blank">Twitter</a>,
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+      </p>
+    </footer>
+  </body>
+</html>
