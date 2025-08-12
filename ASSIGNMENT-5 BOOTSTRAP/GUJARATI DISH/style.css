@@ -1,0 +1,140 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+.icon {
+  font-family: "Dancing Script", cursive;
+  font-weight: 800;
+}
+.bgfont {
+  color:rgb(245, 245, 246);
+  font-size: 17px;
+  font-weight: 800;
+}
+.bgsfonts {
+  color:rgb(2, 2, 2);
+  font-size: 20px;
+  font-weight: 800;
+}
+.dishes {
+  color:bisque;
+  font-size:36px;
+  font-family: cursive;
+  font-weight: 800;
+  text-shadow: 1px 2px 3px black;
+}
+.card {
+  /* Default styles for your div */
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  transition: transform 0.3s ease;
+
+}
+.card:hover {
+  /* Styles to apply on hover */
+  background-color: #eaebe3;
+  /* Lighter background */
+  border-color: #141414;
+  /* Slightly darker border */
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  /* Example shadow */
+  cursor: pointer;
+  /* Change the cursor to a pointer */
+}
+
+.card:hover {
+  transform: scale(1.2);
+  /* Adjust the scale factor for the desired zoom level */
+}
+
+.zoom-display {
+  overflow: hidden;
+}
+#contact {
+  margin: 8px 8% 0px 8%;
+}
+.iconCollections {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  /* border: solid; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 10px;
+}
+
+.brands {
+  color: black;
+  font-size: 2rem;
+}
+
+.icon:hover {
+  background-image: linear-gradient(to bottom right, rgb(16, 136, 100), rgb(38, 10, 103));
+}
+
+.icon:hover .brands {
+  color: white;
+  animation: rotate 3s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(30deg);
+  }
+
+  25% {
+    transform: rotate(-30deg);
+  }
+
+  50% {
+    transform: rotate(30deg);
+  }
+
+  75% {
+    transform: rotate(-30deg);
+  }
+
+  100% {
+    transform: rotate(30deg);
+  }
+
+}
+footer {
+  margin-top: 8%;
+}
+
+#copyright {
+  text-align: center;
+  font-weight: 600;
+}
+
+.upArrow {
+  float: right;
+  margin: -40px 20px 20px 0px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

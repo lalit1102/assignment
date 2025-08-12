@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="style.css" />
+    
+    <!-- font google / -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <img class="rounded-circle" src="/IMAGE/logoo.png" alt="logo" width="65px"/>
+        <h1 style="color: #fcb045">GUJRATI</h1>
+        <div class="collapse navbar-collapse d-flex flex-row-reverse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active p-3" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle p-3" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false" >Categories                
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#breakfast">BreakFast Special</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#lunchanddinner">Lunch Special</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#dinners">Dinner Special</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle p-3"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Recipes
+              </a>
+              <ul class="dropdown-menu text-dark">
+                <li><a class="dropdown-item" href="#deserts">Dessert</a></li>
+                <li><a class="dropdown-item" href="#cake">Cake</a></li>
+                <li><a class="dropdown-item" href="#Salad">Salad</a></li>
+                <li>
+                  <a class="dropdown-item" href="#Vegetarian">Vegetarian</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active p-3" aria-current="page" href="#healthy" href="#" >Healthy and diet</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle p-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Restaurants
+              </a>
+
+              <ul class="dropdown-menu text-dark">
+                <li><a class="dropdown-item" href="#GordhanThal">Gordhan Thal</a></li>
+                <li><a class="dropdown-item" href="#Vishala">Vishala</a></li>
+                <li><a class="dropdown-item" href="#Rajwadu">Rajwadu</a></li>
+                <li><a class="dropdown-item" href="#Agashiye">Agashiye</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active p-3" aria-current="page" href="#follow">Follow Me For More</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- caurosel -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            class="image-fluid"
+            width="100%"
+            height="600px"
+            src="/IMAGE/dark-background.jpg"
+            class="d-block w-100"
+            alt="backgroundimg"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Healthy Food</h5>
+            <p class="fw-bolder">
+              Healthy food makes you feelgood.I choose healthy foods for me to
+              stay as healthy as can be.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/IMAGE/1111.jpg"
+            alt="foody"
+            class="image-fluid"
+            width="100%"
+            height="600px"
+            class="d-block w-100"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Kathyawadi</h5>
+            <p class="fw-bolder bgfont">
+              Exploring the Culinary Elegance of Gujarati Thali
+            </p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img
+            src="/IMAGE/thali_1631080888090.webp"
+            alt="foody"
+            class="image-fluid"
+            width="100%"
+            height="600px"
+            class="d-block w-100"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Gujrati thali</h5>
+            <p class="fw-bolder bgsfonts">
+              Gujarati cuisine, through the Thali tradition, places a strong
+              emphasis on healthful and seasonal eating.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- breakfast -->
+    <h1 class="text-center mt-5 dishes">Gujrati dishes</h1>
+    <div
+      class="d-flex justify-content-evenly flex-wrap mt-1 p-5 mb-3 zoom-display"
+    >
+      <div class="card mt-5" id="breakfast" style="width: 18rem">
+        <img
+          src="/IMAGE/THEPLA.jpg"
+          class="card-img-top"
+          alt="..."
+          class="img-fluid"
+          height="266px"
+          width="187px"
+        />
+        <div class="card-body zoom-element">
+          <h5 class="card-title">THEPLA</h5>
+          <p class="card-text">
+            Thepla is a soft Indian flatbread typical of Gujarati cuisine.
+            Common variants include methi, mooli and dudhi.
+          </p>
+          <a
+            href="https://en.wikipedia.org/wiki/Thepla"
+            class="btn btn-primary"
+            target="_blank"
+            >Read more</a
+          >
+        </div>
+      </div>
+      <div class="card mt-5" style="width: 18rem">
+        <img
+          src="/IMAGE/FAFDA.jpg"
+          class="card-img-top"
+          alt="..."
+          height="266px"
+          width="187px"
+        />
+        <div class="card-body">
+          <h5 class="card-title">FAFDA</h5>
+          <p class="card-text">
+            Fafda is a popular Indian snack native to the western state of
+            Gujarat. Often eaten during festivals, fafda is rectangle in shape
+            and yellowish in color. Fafda is a type of papad and is part of a
+            category of snack food called farsan.
+          </p>
+          <a
+            href="https://en.wikipedia.org/wiki/Fafda"
+            class="btn btn-primary"
+            target="_blank"
+            >Read more</a
+          >
+        </div>
+      </div>
+      <div class="card mt-5" style="width: 18rem">
+        <img
+          src="/IMAGE/jilebi.webp"
+          class="card-img-top"
+          alt="..."
+          height="266px"
+          width="187px"
+        />
+        <div class="card-body">
+          <h5 class="card-title">JALEBI</h5>
+          <p class="card-text">
+            Jalebi is a popular sweet snack in the Indian subcontinent,Jalebi is
+            a fried dough delicacy that is popular across India and beyond.
+          </p>
+          <a
+            href="https://en.wikipedia.org/wiki/Jalebi"
+            class="btn btn-primary"
+            target="_blank"
+            >Read more</a
+          >
+        </div>
+      </div>
+      <div class="card mt-5" style="width: 18rem">
+        <img
+          src="/IMAGE/KHAMANN.jpg"
+          class="card-img-top"
+          alt="..."
+          height="266px"
+          width="187px"
+        />
+        <div class="card-body">
+          <h5 class="card-title">KHAMAN</h5>
+          <p class="card-text">
+            Khaman is a savoury snack from India that found fame in Gujarat.
+            Khaman is made from ground channa daal or channa gram flour, usually
+            with lemon juice, semolina, and curd. A final tadka can be added,
+            using ingredients such as asafoetida and chillies.
+          </p>
+          <a
+            href="https://en.wikipedia.org/wiki/Khaman"
+            class="btn btn-primary"
+            target="_blank"
+            >Read more</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- lunch -->
+
+    <div
+      class="d-flex justify-content-evenly flex-wrap mt-1 p-5 mb-3 zoom-display"
+    >
+      <div class="card mt-5" id="lunchanddinner" style="width: 18rem">
+        <img
+          src="/IMAGE/UNDHIYU.jpg"
+          class="card-img-top"
+          alt="..."
+          class="img-fluid"
+          height="266px"
+          width="187px"
+        />
+        <div class="card-body zoom-element">
+          <h5 class="card-title">UNDHIYU</h5>
+          <p class="card-text">
+            Undhiyu is a Gujarati mixed-vegetable dish that is a regional
+            specialty of Surat, Gujarat, India. The name of this dish comes from
+            the Gujarati word undhu.
+          </p>
+          <a
+            href="https://youtu.be/s2Ed3t5VZcY?si=ETnDE1vH792Ma6Md"
+            class="btn btn-primary"
+            target="_blank"
+            >Read more</a
+          >
+        </div>
+      </div>
+      <div class="card mt-5" style="width: 18rem">
+        <img
+          src="/IMAGE/Sev-Tamatar-ki-sabji.webp"
+          class="card-img-top"
+          alt="..."
+          height="266px"
+          width="187px"
+        />
+        <div class="card-body">
+          <h5 class="card-title">SEV-TAMATA</h5>
+          <p class="card-text">
+            A shaak is a type of a vegetable preparation or sabji in Gujarati
+            cuisine. There are many shaak variations that are found across the
+            different regions in Gujarat itself. Most of them are easy to
+            prepare and simple recipes. Just like this Sev Tameta Nu Shaak which
+            is an all-time favorite of this particular community
+          </p>
+          <a
+            href="https://www.youtube.com/watch?v=M7oZIYtzSLI"
+            class="btn btn-primary"
+            target="_blank"
+            >Read more</a
+          >
+        </div>
+      </div>
+      <div class="card mt-5" style="width: 18rem">
+        <img
+          src="/IMAGE/RINGANA BATETA.jpg"
+          class="card-img-top"
+          alt="..."
+          height="266px"
+          width="187px"
+        />
+        <div class="card-body">
+          <h5 class="card-title">RINGANA BATEATA</h5>
+          <p class="card-text">
+            Brinjal is one such vegetable that gets cooked until it is almost
+            blended as gravy with subtle pieces of purple that stand out.
+            Potatoes get paired with many vegetables like brinjal making it one
+            of the staple ingredients in Gujarati cuisine.
+          </p>
+          <a
+            href="https://www.youtube.com/watch?v=yJrHvuIug6A"
+            class="btn btn-primary"
+            target="_blank"
+            >Read more</a
+          >
+        </div>
+      </div>
+      <div class="card mt-5" style="width: 18rem">
+        <img
+          src="/IMAGE/Gujarati-Urad-dal-L1.webp"
+          class="card-img-top"
+          alt="..."
+          height="266px"
+          width="187px"
+        />
+        <div class="card-body">
+          <h5 class="card-title">DAL</h5>
+          <p class="card-text">
+            Gujarati Urad Dal is very easy and quick to make. Gujarati Urad Dal
+            is very healthy, full of nutritious and rich in protein. Gujarati
+            Urad Dal is perfect combination with Gujarati Bhakri and rice. It is
+            made from split black gram, with Ginger, garlic tempering. It is
+            delicious in taste and good in winter season because of
+            Ginger-Garlic
+          </p>
+          <a
+            href="https://www.youtube.com/watch?v=4s5gUhB-PqM"
+            class="btn btn-primary"
+            target="_blank"
+            >Read more</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- dinner -->
+    <div
+      class="d-flex justify-content-evenly flex-wrap mt-1 p-5 mb-3 zoom-display"
+    >
+      <div class="card mt-5" id="dinners" style="width: 18rem">
+        <img
+          src="/IMAGE/Gujarati-Khichdi-and-Kadi.avif"
+          class="card-img-top"
+          alt="..."
+          class="img-fluid"
+          height="266px"
+          width="187px"
+        />
+        <div class="card-body zoom-element">
+          <h5 class="card-title">KHICHADI AND KADHI</h5>
+          <p class="card-text">
+            Kadhi is generally considered a staple everyday food in many parts
+            of India[9] and is thought to aid in digestion.In Gujarat and
+            Rajasthan, it is usually served with khichdi, roti, paratha, or
+            rice. Gujarati and Rajasthani kadhi differ from the Uttar Pradesh
+            variety.
+          </p>
+          <a
+            href="https://www.youtube.com/watch?v=Bg6N47eU2UI"
+            class="btn btn-primary"
+            target="_blank"
+            >Read more</a
+          >
+        </div>
+      </div>
+      <div class="card mt-5" style="width: 18rem">
+        <img
+          src="/IMAGE/OLO.webp"
+          class="card-img-top"
+          alt="..."
+          height="266px"
+          width="187px"
+        />
+        <div class="card-body">
+          <h5 class="card-title">RINGANA OLO</h5>
+          <p class="card-text">
+            Kathiyawad region of Gujarat is known for its spicy and fiery
+            cuisine that every Indian must try. If you are looking for a simple
+            yet flavourful meal for tonight's dinner, Ringna No Olo is the
+            perfect option for you. This Kathiyawadi dish goes well with both
+            rice and roti and prepared with roasted brinjals.
+          </p>
+          <a
+            href="https://www.youtube.com/watch?v=0j-upHfu8Lc"
+            class="btn btn-primary"
+            target="_blank"
+            >Read more</a
+          >
+        </div>
+      </div>
+      <div class="card mt-5" style="width: 18rem">
+        <img
+          src="/IMAGE/Dal-Dhokli-1.webp"
+          class="card-img-top"
+          alt="..."
+          height="266px"
+          width="187px"
+        />
+        <div class="card-body">
+          <h5 class="card-title">DAL DHOKALI</h5>
+          <p class="card-text">
+            Daal dhokli can be made with various types of daal. Some commonly
+            used daals include toor, masoor, and moong.The daal is then
+            pressure-cooked with water and tempered with spices to create a
+            stew.
+          </p>
+          <a
+            href="https://www.youtube.com/watch?v=cnPuALO90YQ"
+            class="btn btn-primary"
+            target="_blank"
+            >Read more</a
+          >
+        </div>
+      </div>
+      <div class="card mt-5" style="width: 18rem">
+        <img
+          src="/IMAGE/muthiya-recipe-1.jpg"
+          class="card-img-top"
+          alt="..."
+          height="266px"
+          width="187px"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Dudhi Muthia</h5>
+          <p class="card-text">
+            Dudhi muthia is a healthy, classic Gujarati snack. Perfectly steamed
+            and bursting with flavor, these muthiya turned out super soft and
+            fluffy. Keep reading for all the tips and tricks to make them
+            perfect every time
+          </p>
+          <a
+            href="https://www.spiceupthecurry.com/doodhi-muthia/"
+            class="btn btn-primary"
+            target="_blank"
+            >Read more</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- recipes -->
+    <h1 class="text-center mt-5 mb-5 dishes">Recipes</h1>
+    <div class="container overflow-hidden text-center">
+     <div class="row gy-5">
+ <div class="col-lg-6 col" id="cake">
+   <div class="p-3"> 
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/8vL0x-wajjI?si=g1v4i2kgPPgUXOol" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   </div>
+ </div>
+ <div class="col-lg-6 col" id="deserts">
+   <div class="p-3">
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/cXy-VYIVB1w?si=4fNUXLWfMMSoPmQM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyros picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   </div>
+ </div>
+ <div class="col-lg-6 col" id="Salad">
+   <div class="p-3">
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/COxOBEZlQec?si=z8dSUBR_t89IYfRj" title="YouTube video player" frameborder="0" allow="accelerometer;autoplay; clipboard-write; encrypted-media; gyros picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   </div>
+ </div>
+ <div class="col-lg-6 col" id="Vegetarian">
+   <div class="p-3">
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/ljtXfpkcfZo?si=pZ8aBxFyflViLE8b" title="YouTube video player" frameborder="0" allow="accelerometer;autoplay; clipboard-write; encrypted-media; gyros picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   </div>
+         </div>
+     </div>
+ </div>
+
+
+    <!-- healthy -->
+    <div class="container">
+      <div class="row mt-5 mb-3" id="healthy">
+        <h1 class="text-center dishes"><u>Healthy & Diet</u></h1>
+        <div class="col-lg-6 col mt-5">
+          <img
+            class="image-fluid mt-5 ms-2"
+            width="550px"
+            height="400px"
+            src="/IMAGE/healthy-food.jpg"
+            alt="Health"
+          />
+        </div>
+        <div class="col-lg-6 col mt-5">
+          <img
+            class="mt-5 ms-2"
+            width="550px"
+            height="400px"
+            src="/IMAGE/HEPJan2015.avif"
+            alt="Health"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- Restaurants// -->
+    <h1 class="text-center mt-5 dishes">Restaurants</h1>
+    <div
+      class="d-flex justify-content-evenly flex-wrap mt-1 p-5 mb-3 zoom-display"
+    >
+      <div class="card mt-5" id="Rajwadu" style="width: 18rem">
+        <img
+          src="/IMAGE/rajwadu-wedding-event.jpg"
+          class="card-img-top"
+          alt="..."
+          class="img-fluid"
+          height="266px"
+          width="187px"
+        />
+        <div class="card-body zoom-element">
+          <h5 class="card-title">Rajwadu</h5>
+          <p class="card-text">
+            At “Rajwadu (A Unit of Seetavallabha Ram LLP)”, we not only bring
+            alive the traditional Indian and Gujarati culture but also harp on
+            the need to preserve the same for future generations; quite simply
+            because we want the myriad expressions which have come to occupy the
+            faces to last and be passed on.
+          </p>
+          <a
+            href="https://www.google.com/maps/place/Rajwadu/@23.0438813,72.4912145,12963m/data=!3m1!1e3!4m6!3m5!1s0x395e852314f59d05:0xc03bb94d0c1624d9!8m2!3d23.0040414!4d72.5396395!16s%2Fg%2F1thtm_hk?hl=en-US&entry=ttu&g_ep=EgoyMDI1MDgwNi4wIKXMDSoASAFQAw%3D%3D"
+            class="btn btn-primary"
+            target="_blank"
+            >Direction</a
+          >
+        </div>
+      </div>
+      <div class="card mt-5" style="width: 18rem" id="Agashiye">
+        <img
+          src="/IMAGE/1.-Agashiye.webp"
+          class="card-img-top"
+          alt="..."
+          height="266px"
+          width="187px"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Agashiye</h5>
+          <p class="card-text">
+            First on our list of places that serve the best Kathiyawadi food in
+            Ahmedabad is Agashiye – The House of MG. This place has several
+            awards under its belt for its famous Gujarati and Kathiyawadi thali.
+          </p>
+          <a
+            href="https://www.google.com/maps/place/Agashiye/@23.0273928,72.5792651,810m/data=!3m2!1e3!4b1!4m6!3m5!1s0x395e84373aaaaaab:0x8899ad0808530b96!8m2!3d23.0273928!4d72.58184!16s%2Fg%2F1tl4bfbp?hl=en-US&entry=ttu&g_ep=EgoyMDI1MDgwNi4wIKXMDSoASAFQAw%3D%3D"
+            class="btn btn-primary"
+            target="_blank"
+            >Direction</a
+          >
+        </div>
+      </div>
+      <div class="card mt-5" style="width: 18rem" id="Vishala">
+        <img
+          src="/IMAGE/vishala.jpg"
+          class="card-img-top"
+          alt="..."
+          height="266px"
+          width="187px"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Vishala</h5>
+          <p class="card-text">
+            Established in 1978 with a vision to change the way we see Gujarati
+            food,Guests would escape the urban cityscapes and go back to their
+            roots in a rustic and homely environment. Mr. Surendra Patel, one of
+            Gujarats most well-known architects and interior designers, designed
+            the space, lending keen attention to every detail.
+          </p>
+          <a
+            href="https://maps.app.goo.gl/k9GjcxXVH9ciJPj27"
+            class="btn btn-primary"
+            target="_blank"
+          >
+            Direction</a
+          >
+        </div>
+      </div>
+      <div class="card mt-5" style="width: 18rem" id="GordhanThal">
+        <img
+          src="/IMAGE/gordhan.jpg"
+          class="card-img-top"
+          alt="..."
+          height="266px"
+          width="187px"
+        />
+        <div class="card-body">
+          <h5 class="card-title">GordhanThal</h5>
+          <p class="card-text">
+            Rich in legacy with impressive decor, Gordhan Thal is a restaurant
+            that specializes in traditional cuisines from Gujarat and Rajasthan;
+            a variety of savory dishes and sweets. Come with an empty stomach
+            and go home with a wholesome experience.
+          </p>
+          <a
+            href="https://www.google.com/maps/dir/?api=1&destination=Gordhan+Thal,+Ahmedabad"
+            class="btn btn-primary"
+            target="_blank"
+          >
+            Direction</a
+          >
+        </div>
+      </div>
+    </div>
+
+
+
+    <!--contacts  -->
+<section id="contact">
+  <div class="sectionHead">
+  <H1 class="text-center dishes mt-5" id="follow"><u>Follow Me For More</u></H1>
+  </div>
+  <div class="iconCollections">
+    <!-- linkedIn -->
+    <div class="icon">
+      <a href="www.linkedin.com/in/lalit-baldaniya-644456a9" target="_blank">
+        <i class="fa-brands fa-linkedin-in brands"></i></a>
+    </div>
+    <!-- github -->
+    <div class="icon">
+      <a href="https://github.com/lalit1102" target="_blank">
+        <i class="fa-brands fa-github brands"></i>
+      </a>
+    </div>
+    <!-- twitter -->
+    <div class="icon"><a href="https://x.com/home" target="_blank">
+      <i class="fa-brands fa-twitter brands"></i></a>
+    </div>
+    <!-- instagram -->
+    <div class="icon"> <a href="https://www.instagram.com/" target="_blank">
+      <i class="fa-brands fa-instagram brands"></i></a>
+    </div>
+    <!-- whatsapp -->
+    <div class="icon"><a href="https://web.whatsapp.com/" target="_blank">
+      <i class="fa-brands fa-whatsapp brands"></i></a>
+    </div>
+    <!-- facebook -->
+    <div class="icon"> <a href="https://www.facebook.com/" target="_blank">
+
+    </a><i class="fa-brands fa-facebook brands"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- footer -->
+<footer id="footer" class="footer bg-secondary mt-5">
+  <div class="container footer-top">
+    <div class="row gy-4">
+      <div class="col-lg-4 col-md-6 footer-about">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <span class="sitename text-white">Contact me </span>
+        </a>
+        <div class="footer-contact pt-3">
+          <p class="mt-3"><strong class="text-white">Phone:</strong> <span class="text-white">
+            +1 5589 55488 55</span></p>
+          <p><strong class="text-white">Email:</strong> <span class="text-white">info@example.com</span></p>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-3 footer-links">
+        <h4 class="text-white">Useful Links</h4>
+        <ul>
+          <li><a href="#" class="text-white">Home</a></li>
+          <li><a href="#" class="text-white">About us</a></li>
+          <li><a href="#" class="text-white">Services</a></li>
+          <li><a href="#" class="text-white">Terms of service</a></li>
+          <li><a href="#" class="text-white">Privacy policy</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-3 footer-links">
+        <h4 class="text-white">Our Services</h4>
+        <ul>
+          <li><a href="#" class="text-white">Web Design</a></li>
+          <li><a href="#" class="text-white">Web Development</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-12 footer-newsletter">
+        <h4 class="text-white">Our Newsletter</h4>
+        <p class="text-white">Subscribe to our newsletter and receive the latest news about our 
+            products and services!</p>
+        <form action="forms/newsletter.php" method="post" class="php-email-form">
+          <div class="newsletter-form"><input type="email" name="email">
+            <input type="submit" value="Subscribe"></div>
+          <div class="loading text-white">Loading</div>
+          <div class="error-message"></div>
+          <div class="sent-message text-white">Your subscription request has been sent. Thank you!</div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="container copyright text-center mt-4">
+  <p>© <span class="text-white">Copyright</span> <strong class="px-1 sitename text-white">Gujarati..
+
+  </strong> <span class="text-white">All Rights Reserved</span>
+  </p>
+    <div class="credits text-white">
+         Designed by <a class="text-white"  href="https://bootstrapmade.com/">LALIT BALDANIYA</a>
+ </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
