@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hour:Minute:Second Timer</title>
+    <style>
+      #timer {
+        font-size: 40px;
+        font-family: Arial, sans-serif;
+        color: darkred;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Clock</h2>
+    <div id="timer">
+      <span id="hour">0</span> : <span id="min">0</span> :
+      <span id="sec">0</span>
+    </div>
+
+    <script>
+      let sec = 0;
+      let min = 0;
+      let hour = 0;
+
+      setInterval(function () {
+        sec++;
+
+        if (sec >= 60) {
+          sec = 0;
+          min++;
+        }
+
+        if (min >= 60) {
+          min = 0;
+          hour++;
+        }
+
+        document.getElementById("sec").innerHTML = sec < 10 ? "0" + sec : sec;
+        document.getElementById("min").innerHTML = min < 10 ? "0" + min : min;
+        document.getElementById("hour").innerHTML =
+          hour < 10 ? "0" + hour : hour;
+      }, 1000);
+    </script>
+  </body>
+</html>

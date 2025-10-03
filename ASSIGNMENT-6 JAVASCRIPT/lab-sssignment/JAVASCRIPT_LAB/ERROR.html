@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = 10;
+      let b = 2;
+      try {
+        // error generate
+        if (b > 0) {
+          document.write("<br>Division is " + a / b);
+        } else {
+          throw "B must be greter than zero";
+        }
+      } catch (e) {
+        document.write("<br>Error is " + e);
+      } finally {
+        //always be executed
+        document.write("<br>Addition is " + (a + b));
+      }
+    </script>
+  </body>
+</html>

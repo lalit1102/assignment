@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odd Even Sum</title>
+  </head>
+  <body>
+    <script>
+      let no = parseInt(prompt("Enter any number:")); 
+      let evenSum = 0;
+      let oddSum = 0;
+      
+      while (no <= 20) {
+        if (no % 2 === 0) {
+          evenSum = evenSum + no;
+        } else {
+          oddSum = oddSum + no;
+        }
+        no++;
+      }
+      
+      document.write("<br> Sum of Even Numbers is : " + evenSum);
+      document.write("<br> Sum of Odd Numbers is : " + oddSum);
+    </script>
+  </body>
+</html>
