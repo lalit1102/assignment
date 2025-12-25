@@ -1,5 +1,5 @@
 {
-  "name": "hooks",
+  "name": "rect_assignment",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,21 +12,27 @@
   "dependencies": {
     "@reduxjs/toolkit": "^2.11.2",
     "@tailwindcss/vite": "^4.1.18",
+    "firebase": "^12.7.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-redux": "^9.2.0",
-    "tailwindcss": "^4.1.18"
+    "react-router-dom": "^7.11.0",
+    "zustand": "^5.0.9"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
     "@types/react": "^19.1.16",
     "@types/react-dom": "^19.1.9",
     "@vitejs/plugin-react": "^5.0.4",
+    "autoprefixer": "^10.4.23",
     "babel-plugin-react-compiler": "^19.1.0-rc.3",
     "eslint": "^9.36.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.22",
     "globals": "^16.4.0",
+    "json-server": "^1.0.0-beta.3",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.18",
     "vite": "^7.1.7"
   }
 }

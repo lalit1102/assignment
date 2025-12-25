@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-// const [state, setState] = useState(initialState)
+
 const AppUseState = () => {
     const [num, setNum] = useState(0);
     const handleClick = () => {
