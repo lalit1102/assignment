@@ -1,0 +1,143 @@
+<%- include('./common/header.ejs') %>
+<%- include('./common/sidebar.ejs') %>
+
+<main class="app-main">
+
+  <!-- PAGE HEADER -->
+  <div class="app-content-header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6">
+          <h3 class="mb-0">Sub Category</h3>
+        </div>
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-end">
+            <li class="breadcrumb-item">
+              <a href="/dashboard">Home</a>
+            </li>
+            <li class="breadcrumb-item active">Sub Category</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGE CONTENT -->
+  <div class="app-content">
+    <div class="container-fluid">
+
+      <div class="row g-4">
+
+        <!-- ADD SUB CATEGORY FORM -->
+        <div class="col-md-6">
+          <div class="card card-primary card-outline">
+            <div class="card-header">
+              <h3 class="card-title">Add Sub Category</h3>
+            </div>
+
+            <form method="post" action="/subCategory/ins" enctype="multipart/form-data">
+              <input type="hidden" name="subid" value="<%= (editdata)?editdata._id:''%>">
+              <div class="card-body">
+                <div class="mb-3">
+                  <label class="form-label">Category</label>
+                  <input
+                    type="text"
+                    name="cat_id"
+                    class="form-control"
+                    placeholder="Enter Category"
+                    required
+                    value="<%= (editdata)?editdata.cat_id:''%>"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Sub Category</label>
+                  <input
+                    type="text"
+                    name="subcatname"
+                    class="form-control"
+                    placeholder="Enter Sub Category"
+                    required
+                    value="<%= (editdata)?editdata.subcatname:''%>"
+                  />
+                </div>
+
+
+                <div class="mb-3">
+                  <label class="form-label">Image</label>
+                  <input
+                    type="file"
+                    name="image"
+                    class="form-control"
+                    placeholder="Enter Sub Category"
+                    
+                
+
+                   
+                  />
+                  <br>
+                  <img src="../../uploads/<%= editdata ? editdata.image : "" %>"height="150" width="150" alt="">
+                </div>
+              </div>
+
+              <div class="card-footer text-end">
+                <button type="submit" class="btn btn-primary">
+                  Save Sub Category
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- SUB CATEGORY TABLE -->
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Sub Category List</h3>
+            </div>
+
+            <div class="card-body">
+              <table class="table table-bordered table-hover">
+                <thead class="table-light">
+                  <tr>
+                    <th style="width: 50px">#</th>
+                    <th>image</th>
+                    <th>Category</th>
+                    <th>Sub Category</th>
+                    <th style="width: 150px">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <% if (subcatdata && subcatdata.length > 0) { %>
+                    <% subcatdata.forEach((i, index) => { %>
+                      <tr>
+                        <td><%= index + 1 %></td>
+                        <td> <img src="../../uploads/<%= i.image %>" alt="Subcategory Image" width="80" height="80"></td>
+                        <td><%= i.cat_id %></td>
+                        <td><%= i.subcatname %></td>
+                        <td>
+                          <a href="/subCategory/edit/<%= i._id %>" class="btn btn-info btn-sm">Edit</a>
+                          <a href="/subCategory/del/<%= i._id %>" class="btn btn-danger btn-sm">Delete</a>
+                        </td>
+                      </tr>
+                    <% }) %>
+                  <% } else { %>
+                    <tr>
+                      <td colspan="4" class="text-center text-muted">
+                        No Sub Categories Found
+                      </td>
+                    </tr>
+                  <% } %>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<%- include('./common/footer.ejs') %>
